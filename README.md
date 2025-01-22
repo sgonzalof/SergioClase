@@ -1,0 +1,2 @@
+# SergioClase
+Ejercicios del curso PROGRAMACION DE SISTEMAS INFORMATICOS
