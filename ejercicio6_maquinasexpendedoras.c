@@ -11,20 +11,24 @@ int main (void)
     q=0;
     k=0;
     /*la maquina dispone de monedas de .50, .20, .10, .05 euros y tiene que devolver el menor numero de monedas*/
-    while (vuelta-0.50 >=.50)
+    while (vuelta >=.50)
     {   
+        vuelta=vuelta-0.50;
         i=i+1;
     }
-     while (vuelta-0.20 >=.20)
+     while (vuelta>=.20)
     {   
+         vuelta=vuelta-0.20;
         j=j+1;
     }
-     while (vuelta-0.10 >=.10)
+     while (vuelta>=.10)
     {   
+        vuelta=vuelta-0.10;
         q=q+1;
     }
-     while (vuelta-0.05 >=.05)
+     while (vuelta >=.05)
     {   
+        vuelta=vuelta-0.05;
         k=k+1;
     }
     printf("La maquina devuelve %d monedas de 0.50 euros, %d monedas de 0.20 euros, %d monedas de 0.10 euros y %d monedas de 0.05 euros", i, j, q, k);
