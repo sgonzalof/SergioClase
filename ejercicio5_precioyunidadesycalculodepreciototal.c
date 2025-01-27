@@ -12,5 +12,6 @@ int main(void)
     
     total = precio * unidades;
     printf("El precio total de %d unidades a %f euros cada una es %f euros\n", unidades, precio, total);
+    
     return 0;
 }
