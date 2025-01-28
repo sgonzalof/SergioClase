@@ -14,11 +14,11 @@ int main(void)
 
     printf(" | PRODUCTO | VENTAS | PRECIO | TOTAL |\n");
     printf("---------------------------------------\n");
-    printf(" | %6s | %6d | %6f | %6f |\n", "COLA", c, pc, c*pc);
-    printf(" | %4s | %6d | %6f | %6f |\n", "NARANJA", n, pn, n*pn);
-    printf(" | %6s | %6d | %6f | %6f |\n", "LIMON", l, pl, l*pl);
+    printf(" | %8s | %6d | %6.2f | %8.2f |\n", "COLA", c, pc, c*pc);
+    printf(" | %8s | %6d | %6.2f | %8.2f |\n", "NARANJA", n, pn, n*pn);
+    printf(" | %8s | %6d | %6.2f | %8.2f |\n", "LIMON", l, pl, l*pl);
     printf("---------------------------------------\n");
-    printf("------------------------------TOTAL %f",total);
+    printf("------------------------------TOTAL %.2f",total);
     
 
    
