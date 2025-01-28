@@ -4,16 +4,19 @@ int main(void)
     /*introduce por pantalla numero de refrescos que se vendieron y precio */
     int c,n,l;
     float pc, pn, pl, total;
-    printf("Introduce el numero de refrescos vendidos y su precio:");
-    scanf("el numero de colas vendidas es %d y su precio es %f", &c, &pc);
-    scanf("el numero de naranjas vendidas es %d y su precio es %f", &n, &pn);
-    scanf("el numero de limones vendidos es %d y su precio es %f", &l, &pl);
-    char cola=(char)c;
-    char naranja=(char)n;
-    char limon=(char)l;
-    char preciocol=(char)pc;
-    char precionar=(char)pn;
-    char preciolim=(char)pl;
+    char cola, naranja, limon, preciocol, precionar, preciolim;
+    printf("Introduce el numero de colas vendidas y su precio:");
+    scanf("%d, %f", &c, &pc);
+    printf("Introduce el numero de refrescos de naranja vendidos y su precio:");
+    scanf("%d, %f", &n, &pn);
+    printf("Introduce el numero de refrescos de limon vendidos y su precio:");
+    scanf( "%d , %f", &l, &pl);
+    cola=(char)c;
+    naranja=(char)n;
+    limon=(char)l;
+    preciocol=(char)pc;
+    precionar=(char)pn;
+    preciolim=(char)pl;
     char tabla[4][4];
 
     tabla[0][0]="PRODUCTO";
@@ -32,12 +35,12 @@ int main(void)
     tabla[3][1]=(char)c*pc;
     tabla[3][2]=(char)n*pn;
     tabla[3][3]=(char)l*pl;
-
+/*usar punteros para la tabla es decir que cada posicion de la tabla ssea un puntero que apunta a la variable que deberia ir en la tabla*/
 
 
     printf("El precio total de refrescos vendidos es %f euros\n", total);
     {
-       /* code */
+        for (i=0; i<4; i++)
          printf(tabla);
 
     }

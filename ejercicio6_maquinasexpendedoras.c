@@ -18,7 +18,7 @@ int main (void)
     }
      while (vuelta>=.20)
     {   
-         vuelta=vuelta-0.20;
+        vuelta=vuelta-0.20;
         j=j+1;
     }
      while (vuelta>=.10)

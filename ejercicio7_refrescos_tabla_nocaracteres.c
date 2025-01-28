@@ -10,6 +10,7 @@ int main(void)
     scanf("%d %f", &n, &pn);
     printf("Introduce el numero de refrescos de limon vendidos y su precio:");
     scanf( "%d %f", &l, &pl);
+    total=(c*pc)+(n*pn)+(l*pl);
 
     printf(" | PRODUCTO | VENTAS | PRECIO | TOTAL |\n");
     printf("---------------------------------------\n");
@@ -17,6 +18,7 @@ int main(void)
     printf(" | %4s | %6d | %6f | %6f |\n", "NARANJA", n, pn, n*pn);
     printf(" | %6s | %6d | %6f | %6f |\n", "LIMON", l, pl, l*pl);
     printf("---------------------------------------\n");
+    printf("------------------------------TOTAL %f",total);
     
 
    
