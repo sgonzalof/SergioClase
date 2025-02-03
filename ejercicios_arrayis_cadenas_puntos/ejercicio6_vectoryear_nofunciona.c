@@ -3,14 +3,15 @@
 #include <string.h>
 int main (void)
 {
-    int year[4], *pyear, numeroano;
+    int year[4], *pyear, numeroano,i;
     char anocadena;
     printf("Introduce un año (utiliza ceros a la izq para años<1000): ");
     scanf("%c", anocadena);
     printf("El año introducido es %c\n", anocadena);
-    anocadena=atof(anocadena);
+    
     for (int i=0; i<4; i++)
     {
+        anocadena[i]=atoi(anocadena[i]);    
         year[i]=anocadena[i];
     }
     if (numeroano%4==0)
