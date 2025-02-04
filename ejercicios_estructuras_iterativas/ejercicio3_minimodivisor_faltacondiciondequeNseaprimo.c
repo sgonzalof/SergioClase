@@ -4,6 +4,15 @@ int main (void)
     int num, i;
     printf("Introduce un número: ");
     scanf("%d", &num);
+    for (i=2; i<num; i++)
+    {
+        while (num%i!=0)
+        {
+            if 
+            
+       
+
+    }
     if (num<2 || num)
     {
         printf("El número introducido no tiene mínimo divisor\n");
