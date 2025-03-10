@@ -15,7 +15,7 @@ while (a<4 || b<100)
         mayor=b;
     }
     else {
-        mayor=0
+        mayor=0;
     }
     a=a+mayor;
     b=b*mayor;
